@@ -50,13 +50,54 @@
         return (
             <div className="body">
                 <div className="sidebar">
-
+                    <nav className="sidebar__navigation">
+                        <h3 className="sidebar__tittle">Ингредиенты</h3>
+                        <ul className="sidebar__list">
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Закваски для сыра</a>
+                            </li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Ферменты для сыра</a>
+                            </li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Хлористый кальций</a>
+                            </li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Плесень для сыра</a>
+                            </li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Кисломолочные
+                                закваски</a></li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Красители для сыра</a>
+                            </li>
+                            <li className="sidebar__item"><a href="#" className="sidebar__link">Специи для сыра</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <div className="content">
+                    <div className="block-card">
+                        <img src="images/img-cards-1.jpg" alt=""/>
+                        <div className="block-info-card">
+                            <h6 className="title-card">Сырная тарелка</h6>
+                            <p className="text-cards">
+                                Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...
+                            </p>
+                        </div>
+                    </div>
 
+                    <div className="block-card">
+                        <img src="images/img-cards-2.jpg" alt=""/>
+                        <div className="block-info-card">
+                            <h6 className="title-card">Откуда в сыре дырки?
+                            </h6>
+                            <p className="text-cards">Особенно характерно наличие в структуре швейцарских сортов</p>
+                        </div>
+                    </div>
+
+                    <div className="block-card">
+                        <img src="images/img-cards-3.jpg" alt=""/>
+                        <div className="block-info-card">
+                            <h6 className="title-card">Сырная диета</h6>
+                            <p className="text-cards">Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         );
     };
@@ -64,7 +105,7 @@
     const Footer = ({}) => {
         return (
             <div className="footer">
-
+                <p className="text-footer">г. Москва, улица Свободы 1/7</p>
             </div>
         );
     };
