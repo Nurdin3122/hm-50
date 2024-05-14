@@ -8,8 +8,9 @@
     <title>Title</title>
 </head>
 <body>
+<div id="app"></div>
 <script type="text/babel">
-    const createMovieBlock = ({name , year, img}) => {
+    const Movie = ({name , year, img}) => {
         return (
             <div className="movie">
                 <img src={img} alt={`name: ${name}`} />
@@ -18,7 +19,14 @@
             </div>
         );
     };
+
+    const movies = (
+        <div>
+            <Movie name="shrek" year="2001" img="https://image.tmdb.org/t/p/original/oQh2HpAXRIr2ZCSmYuH8NIMRxyP.jpg"  />
+        </div>
+    );
     
+
 </script>
 
 </body>
