@@ -8,6 +8,18 @@
     <title>Title</title>
 </head>
 <body>
+<script type="text/babel">
+    const createMovieBlock = ({name , year, img}) => {
+        return (
+            <div className="movie">
+                <img src={img} alt={`name: ${name}`} />
+                <h4>{name}</h4>
+                <p>Year of release: {year}</p>
+            </div>
+        );
+    };
+    
+</script>
 
 </body>
 </html>
