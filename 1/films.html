@@ -6,6 +6,32 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .block {
+            display: flex;
+            justify-content: center;
+        }
+        .movie {
+            display: flex;
+            max-width: 250px;
+            border: 1px solid #A4A4A4;
+            text-align: center;
+            margin-right: 10px;
+            flex-direction: column;
+        }
+        .img {
+            max-width: 250px;
+        }
+
+        .title{
+            margin-top: auto;
+        }
+
+        .text {
+            border-top: 1px solid black;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>
@@ -13,23 +39,23 @@
     const Movie = ({name , year, img}) => {
         return (
             <div className="movie">
-                <img src={img} alt={`name: ${name}`} />
-                <h4>{name}</h4>
-                <p>Year of release: {year}</p>
+                <img className="img" src={img} alt={`name: ${name}`} />
+                <h3 className="title">{name}</h3>
+                <p className="text">Year of release: {year}</p>
             </div>
         );
     };
 
     const movies = (
-        <div>
-            <Movie name="shrek" year="2001" img="https://image.tmdb.org/t/p/original/oQh2HpAXRIr2ZCSmYuH8NIMRxyP.jpg"  />
+        <div className="block">
+            <Movie name="Шрек" year="2001 г." img="https://image.tmdb.org/t/p/original/oQh2HpAXRIr2ZCSmYuH8NIMRxyP.jpg"  />
+            <Movie name="Джентльмены" year="2019 г." img="https://media.kg-portal.ru/movies/g/gentlemen/posters/gentlemen_2.jpg"  />
+            <Movie name="Джентльмены" year="2015 г." img="https://cdn.ananasposter.ru/image/cache/catalog/poster/film/99/1537-1000x830.jpg"  />
+
         </div>
     );
 
     ReactDOM.render(movies, document.getElementById('app'));
-
-
 </script>
-
 </body>
 </html>
